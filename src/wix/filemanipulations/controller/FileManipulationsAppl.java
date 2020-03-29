@@ -18,7 +18,7 @@ public class FileManipulationsAppl {
 		BufferedReader console = 
 				new BufferedReader(new InputStreamReader(System.in));
 		
-			System.out.println("please write manipulation or exit");
+			System.out.println("hi, please write manipulation or exit");
 			String manipulation = console.readLine();
 			if(manipulation == null || manipulation.equals("exit")){
 				System.out.println("glad to see you");
