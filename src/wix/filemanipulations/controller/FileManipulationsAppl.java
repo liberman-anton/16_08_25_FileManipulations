@@ -6,7 +6,7 @@ import java.util.List;
 
 public class FileManipulationsAppl {
 
-public class LinesInputOutput {
+public static class LinesInputOutput {
 	BufferedReader input;
 	PrintWriter output;
 	
