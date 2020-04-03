@@ -1,8 +1,8 @@
 package wix.filemanipulations.controller;
 
 import java.io.*;
-import java.lang.reflect.Method;
-import java.util.List;
+import java.lang.*;
+import java.util.*;
 
 public class FileManipulationsAppl {
 
