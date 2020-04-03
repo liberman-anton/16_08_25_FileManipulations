@@ -4,9 +4,36 @@ import java.io.*;
 import java.lang.reflect.Method;
 import java.util.List;
 
-import wix.filemanipulations.io.LinesInputOutput;
-
 public class FileManipulationsAppl {
+
+public class LinesInputOutput {
+	BufferedReader input;
+	PrintWriter output;
+	
+	public LinesInputOutput(BufferedReader input, PrintWriter output) {
+		super();
+		this.input = input;
+		this.output = output;
+	}
+	
+	public List<String> getLines() throws IOException{
+		List<String> lines = new LinkedList<>();
+		while(true){
+				String line = input.readLine();
+				if(line == null)
+					break;
+				lines.add(line);
+			}
+			input.close();
+		return lines;
+	}
+	
+	public void putLines(List<String> lines){
+		for(String line : lines){
+			output.println(line);
+		}
+		output.close();
+	}
 
 	private static final String PACKAGE_NAME = "wix.filemanipulations.manipulations";
 
