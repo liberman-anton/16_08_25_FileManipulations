@@ -34,6 +34,7 @@ public class LinesInputOutput {
 		}
 		output.close();
 	}
+}
 
 	private static final String PACKAGE_NAME = "wix.filemanipulations.manipulations";
 
