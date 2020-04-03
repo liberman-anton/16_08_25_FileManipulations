@@ -71,9 +71,9 @@ public static class LinesInputOutput {
 		Class objClass = obj.getClass();
 		Method method = null;
 		try {
-			method = objClass.getMethod("manipulate", List.class);
-			List<String> resLines = (List<String>)(method.invoke(obj, linesInput));
-			lines.putLines(resLines);
+		//	method = objClass.getMethod("manipulate", List.class);
+		//	List<String> resLines = (List<String>)(method.invoke(obj, linesInput));
+		//	lines.putLines(resLines);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
